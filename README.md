@@ -1,4 +1,4 @@
-# microfront
+# fems
 
 [WIP]
 
@@ -8,14 +8,14 @@ An idea for microservices on the front end
 
 ## Installation
 
-`npm i microfront`
+`npm i fems`
 
 ## Usage
 
 ```javascript
-import m from 'microfront'
+import f from 'fems'
 
-m('/manifest.json')
+f('/manifest.json')
 ```
 
 ## License

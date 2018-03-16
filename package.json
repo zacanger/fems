@@ -1,5 +1,5 @@
 {
-  "name": "microfront",
+  "name": "fems",
   "description": "An idea for microservices on the front end",
   "version": "0.0.3",
   "author": {
@@ -19,15 +19,15 @@
     "test": "npm run test:lint",
     "test:lint": "eslint -c .eslintrc.json src"
   },
-  "homepage": "https://github.com/zacanger/microfront#readme",
+  "homepage": "https://github.com/zacanger/fems#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zacanger/microfront.git"
+    "url": "https://github.com/zacanger/fems.git"
   },
-  "bugs": "https://github.com/zacanger/microfront/issues",
+  "bugs": "https://github.com/zacanger/fems/issues",
   "keywords": [
     "fed",
-    "microfront",
+    "fems",
     "microservice",
     "microservices",
     "web"
