@@ -1,8 +1,6 @@
 # fems
 
-[WIP]
-
-An idea for microservices on the front end
+Front End Micro Services [WIP]
 
 --------
 
