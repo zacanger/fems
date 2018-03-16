@@ -8,10 +8,16 @@
     "url": "http://zacanger.com"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "start": "node index",
-    "test": ""
+    "build": "babel src/index.js --out-file lib/index.js",
+    "prebuild": "npm t",
+    "preversion": "npm run build",
+    "test": "npm run test:lint",
+    "test:lint": "eslint -c .eslintrc.json src"
   },
   "homepage": "https://github.com/zacanger/microfront#readme",
   "repository": {
@@ -27,7 +33,19 @@
     "web"
   ],
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.2.2",
+    "babel-plugin-syntax-dynamic-import": "6.18.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-stage-2": "6.24.1",
+    "eslint": "4.18.2",
+    "eslint-config-jane": "1.1.1",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-unicorn": "4.0.2"
+  },
   "engines": {
     "node": ">=8.0.0"
   }
