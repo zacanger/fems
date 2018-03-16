@@ -1,6 +1,6 @@
 {
   "name": "microfront",
-  "description": "microfront",
+  "description": "An idea for microservices on the front end",
   "version": "0.0.1",
   "author": {
     "name": "Zac Anger",
@@ -20,8 +20,11 @@
   },
   "bugs": "https://github.com/zacanger/microfront/issues",
   "keywords": [
-    "",
-    "microfront"
+    "fed",
+    "microfront",
+    "microservice",
+    "microservices",
+    "web"
   ],
   "dependencies": {},
   "devDependencies": {},
