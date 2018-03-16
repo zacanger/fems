@@ -1,7 +1,7 @@
 {
   "name": "microfront",
   "description": "An idea for microservices on the front end",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
