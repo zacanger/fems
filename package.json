@@ -13,7 +13,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "babel src/index.js --out-file lib/index.js",
+    "build": "babel src/ -d lib/",
     "prebuild": "npm t",
     "preversion": "npm run build",
     "test": "npm run test:lint",
@@ -37,10 +37,10 @@
     "babel-cli": "6.26.0",
     "babel-eslint": "8.2.3",
     "babel-plugin-syntax-dynamic-import": "6.18.0",
-    "babel-preset-env": "1.6.1",
+    "babel-preset-env": "1.7.0",
     "babel-preset-stage-2": "6.24.1",
     "eslint": "4.19.1",
-    "eslint-config-zacanger": "3.1.1",
+    "eslint-config-zacanger": "3.1.2",
     "eslint-plugin-babel": "5.1.0",
     "eslint-plugin-import": "2.11.0",
     "eslint-plugin-promise": "3.7.0",

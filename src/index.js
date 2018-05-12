@@ -1,3 +1,5 @@
+import i from './shim'
+
 const get = async (url, opts) => {
   const res = await window.fetch(url, opts)
   if (!res.ok) throw new Error(res.statusText)
@@ -13,7 +15,7 @@ const each = async (xs, cb) => {
 export default async (manifest) => {
   const apps = await get(manifest)
   await each(apps, async (m) => {
-    const { mount, app } = await import(m)
+    const { mount, app } = await i(m)
     mount(app)
   })
 }
