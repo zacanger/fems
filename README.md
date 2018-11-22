@@ -16,9 +16,22 @@ import f from 'fems'
 f('/manifest.json')
 ```
 
+The argument passed should be the URL of a piece of JSON with a list of other
+urls to dynamically import. Your modules should export a `run` named function,
+which could attach apps to DOM nodes, or whatever.
+
+```javascript
+export const run = () => {
+  ReactDOM.render(
+    <App />
+    document.getElementById('app-root')
+  ) 
+}
+```
+
 ## Important
 
-Until `import()` is in the spec and supported by any engine, this won't work.
+This module uses ES Modules and dynamic import. It will break in any even slightly old browsers.
 
 ## License
 

@@ -8,16 +8,11 @@
     "url": "http://zacanger.com"
   },
   "license": "MIT",
-  "main": "lib/index.js",
-  "files": [
-    "lib"
-  ],
+  "main": "index.js",
   "scripts": {
-    "build": "babel src/ -d lib/",
-    "prebuild": "npm t",
-    "preversion": "npm run build",
+    "preversion": "npm t",
     "test": "npm run test:lint",
-    "test:lint": "eslint -c .eslintrc.json src"
+    "test:lint": "eslint -c .eslintrc.json index.js"
   },
   "homepage": "https://github.com/zacanger/fems#readme",
   "repository": {
@@ -34,17 +29,12 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-eslint": "8.2.3",
-    "babel-plugin-syntax-dynamic-import": "6.18.0",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-stage-2": "6.24.1",
-    "eslint": "4.19.1",
-    "eslint-config-zacanger": "3.1.2",
-    "eslint-plugin-babel": "5.1.0",
-    "eslint-plugin-import": "2.11.0",
-    "eslint-plugin-promise": "3.7.0",
-    "eslint-plugin-unicorn": "4.0.3"
+    "eslint": "5.9.0",
+    "eslint-config-zacanger": "3.4.1",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-unicorn": "6.0.1"
   },
   "engines": {
     "node": ">=8.0.0"
