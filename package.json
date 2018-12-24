@@ -12,7 +12,7 @@
   "scripts": {
     "preversion": "npm t",
     "test": "npm run test:lint",
-    "test:lint": "eslint -c .eslintrc.json index.js"
+    "test:lint": "eslint -c .eslintrc.json index.js test/*.js"
   },
   "homepage": "https://github.com/zacanger/fems#readme",
   "repository": {
