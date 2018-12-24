@@ -40,14 +40,6 @@ function fems (manifest) {
     })
 }
 
-const fems = async (manifest) => {
-  const apps = await get(manifest)
-  await each(apps, async (m) => {
-    const { run } = await load(m)
-    run()
-  })
-}
-
 /*
 const load = (src) => {
   try {
