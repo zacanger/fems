@@ -22,10 +22,13 @@ const each = async (xs, cb) => {
   }
 }
 
-export default async (manifest) => {
+const fems async (manifest) => {
   const apps = await get(manifest)
   await each(apps, async (m) => {
     const { run } = await load(m)
     run()
   })
 }
+
+export default fems
+window.__fems = fems

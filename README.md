@@ -16,6 +16,15 @@ import f from 'fems'
 f('/manifest.json')
 ```
 
+Or
+
+```html
+<script type="module" src="https://unpkg.com/fems"></script>
+<script type="javascript">
+  window.__fems('/manifest.json')
+</script>
+```
+
 The argument passed should be the URL of a piece of JSON with a list of other
 urls to dynamically import. Your modules should export a `run` named function,
 which could attach apps to DOM nodes, or whatever.

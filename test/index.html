@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>hello</title>
+    <style type="text/css">
+      body { display: flex; }
+      div { width: 50vw; height: 100vh; }
+      #one { background-color: red; }
+      #two { background-color: blue; }
+    </style>
+    <script type="module" src="https://unpkg.com/fems"></script>
+  </head>
+  <body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <script type="text/javascript">
+      window.__fems('/manifest.json')
+    </script>
+  </body>
+</html>
