@@ -1,46 +1,5 @@
 /* eslint-disable */
-function get (url, opts) {
-  window.fetch(url, opts)
-    .then(function (res) {
-      if (!res.ok) {
-        throw new Error(res.statusText)
-      }
-      return res.json()
-    })
-}
 
-function each (xs, cb) {
-  for (var i = 0; i < xs.length; i++) {
-    cb(xs[i]).then(function () {})
-  }
-}
-
-function load (src) {
-  try {
-    // eslint-disable-next-line
-    new Function('import("' + src + '")')()
-  } catch (e) {
-    var s = document.createElement('script')
-    s.src = 'https://unpkg.com/shimport'
-    s.dataset.main = src
-    document.head.appendChild(s)
-  }
-}
-
-function fems (manifest) {
-  get(manifest)
-    .then(function (apps) {
-      each(apps)
-        .then(function (m) {
-          load(m)
-            .then(function (n) {
-              n.run()
-            })
-        })
-    })
-}
-
-/*
 const load = (src) => {
   try {
     // eslint-disable-next-line
@@ -72,7 +31,6 @@ const fems = async (manifest) => {
     run()
   })
 }
-*/
 
 // UMD-ish + ES modules
 if (typeof module !== 'undefined' && typeof exports === 'object') {
