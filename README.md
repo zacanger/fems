@@ -31,7 +31,8 @@ export const run = () => {
 
 ## Important
 
-This module uses ES Modules and dynamic import. It will break in any even slightly old browsers.
+This module doesn't really work yet. It's based on ES Modules and dynamic
+import, and uses [shimport](https://github.com/Rich-Harris/shimport).
 
 ## License
 
