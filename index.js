@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 const load = (src) => {
   try {
     // eslint-disable-next-line
